@@ -31,14 +31,14 @@
         1. Change at most 4 pointers (1 for the left element, 2 for the inserted element, and 1 for the right element) if it is a doubly linked list
     5. When removing an element all we have to do is change the pointers to the right element and the left element
         1. Has complexity of O(1)
-5. **Pros:**
+5. Pros:
     1. Can append two lists in O(1) time
     2. Adding and removing elements is fast (O(1))
     3. Simplifies some operations
         1. Ideal for queues
     4. No preallocated storage
         1. can add elements until storage is full
-6. **Cons:**
+6. Cons:
     1. Increased element access time
     2. Pointer overhead may be large
     
