@@ -14,8 +14,14 @@ def slice_my_string():
         # to take
         print(my_string[0:n+1:2], my_string[1:n+1:2])
 
-if __name__ == '__main__':
-    n = int(input())
+
+""" 
+Read an integer N. Without any string methods, print the following: 1234...N.
+Note that "..." represents the values in between. 
+
+"""
+def print_number_as_string():
+    n = int(input("Enter an integer: "))
     i_exponent = len(str(n))
     i = 10**i_exponent
     j = 1
