@@ -9,6 +9,9 @@ def slice_my_string():
     for i in range(test_cases):
         my_string = input('Enter your string: ')
         n = len(my_string)
+        # using string indexing where the first number is the inclusive
+        # starting point; n+1 is the exclusive ending point; 2 is the steps
+        # to take
         print(my_string[0:n+1:2], my_string[1:n+1:2])
 
 if __name__ == '__main__':
