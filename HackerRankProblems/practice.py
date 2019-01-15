@@ -48,4 +48,33 @@ def reverse_array_of_numbers():
     for num in reverse_array:
         print(num, end=" ")
 
-reverse_array_of_numbers()
+
+def friend_phone_book():
+    """
+    Given n names and phone numbers, assemble a phone book that maps
+    friends' names to their respective phone numbers. You will then be given
+    an unknown number of names to query your phone book for. For each name
+    queried, print the associated entry from your phone book on a new line in
+    the form name=phoneNumber; if an entry for name is not found, print Not
+    found instead.
+    """
+    num_entries = int(input("How many entries? "))
+    phone_book = {}
+    for i in range(0, num_entries):
+        entries = input("Input your friends name and phone number: ")
+        my_friend = entries.split()
+        phone_book[my_friend[0]] = my_friend[1]
+
+    lookup_value = input("Lookup value: ")
+    while True:
+        phone_number = phone_book.get(lookup_value)
+        if phone_number is None:
+            print("Not found")
+        else:
+            print(lookup_value + "=" + phone_number)
+
+        lookup_value = input("Lookup value: ")
+        if lookup_value == "":
+            return False
+
+friend_phone_book()
