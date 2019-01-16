@@ -77,4 +77,12 @@ def friend_phone_book():
         if lookup_value == "":
             return False
 
-friend_phone_book()
+def factorial(n):
+    """
+    Write a factorial function that takes a positive integer N as a
+    parameter and prints the result of N!
+    """
+    if n <= 1:
+        return 1
+    return n * factorial(n-1)
+
