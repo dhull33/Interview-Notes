@@ -43,7 +43,6 @@ def reverse_array_of_numbers():
     """
     given_array = list(map(int, input("Enter a space separated sequence of "
                                       "numbers: ").rstrip().split()))
-
     reverse_array = given_array[::-1]
     for num in reverse_array:
         print(num, end=" ")
