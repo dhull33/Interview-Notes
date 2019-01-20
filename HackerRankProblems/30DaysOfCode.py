@@ -85,3 +85,22 @@ def factorial(n):
         return 1
     return n * factorial(n-1)
 
+def binary_nums():
+    """Given a base-10 integer, n, convert it to binary (base-2). Then find
+    and print the base-10 integer denoting the maximum number of consecutive
+    1's  in n's binary representation"""
+    num_to_convert = int(input("What integer to convert? "))
+    binary_int = bin(num_to_convert)
+    stripped_bin = binary_int[2:]
+    max_ones = 0
+    current_ones = 0
+
+    for i in range(0, len(stripped_bin)):
+        if stripped_bin[i] == "1":
+            current_ones += 1
+            if max_ones < current_ones:
+                max_ones = current_ones
+        else:
+            current_ones = 0
+
+    print(max_ones)
