@@ -125,14 +125,10 @@ def hourglass():
     current_sum = 0
 
     for i in range(0, 4):
-        # print(i)
-        # if i+1 > 6 or i+2 > 6:
-        #     return
         for j in range(0, 4):
-            # print(j)
             current_sum = (big[i][j] + big[i][j+1] + big[i][j+2] + big[i+1][j+1] +
                            big[i+2][j] + big[i+2][j+1] + big[i+2][j+2])
-            print(current_sum)
+
             if current_sum > max_sum:
                 max_sum = current_sum
     print(max_sum)
