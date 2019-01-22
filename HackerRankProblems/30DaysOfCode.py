@@ -133,4 +133,39 @@ def hourglass():
                 max_sum = current_sum
     print(max_sum)
 
-hourglass()
+# Implementing a Linked List
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+class Solution:
+    def display(self, head):
+        current = head
+        while current:
+            print(current.data, end=' ')
+            current = current.next
+
+    def insert(self, head, data):
+        # if the list has no elements, we return a new node
+        new_node = Node(data)
+        if head is None:
+            return new_node
+        # otherwise we iterate through the list, add the node to the tail,
+        # and return head
+        temp = head
+        while temp.next is not None:
+            temp = temp.next
+        temp.next = Node(data)
+        return head
+
+def createLinkedList():
+
+    mylist = Solution()
+    T = int(input("Enter the length of linked list: "))
+    head = None
+    for i in range(T):
+        data = int(input("Enter an integer: "))
+        head = mylist.insert(head, data)
+    mylist.display(head)
+
+createLinkedList()
