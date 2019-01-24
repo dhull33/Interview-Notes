@@ -158,8 +158,8 @@ class Solution:
         temp.next = Node(data)
         return head
 
+# Creates a linked list by implementing the Node class
 def createLinkedList():
-
     mylist = Solution()
     T = int(input("Enter the length of linked list: "))
     head = None
@@ -167,5 +167,3 @@ def createLinkedList():
         data = int(input("Enter an integer: "))
         head = mylist.insert(head, data)
     mylist.display(head)
-
-createLinkedList()
