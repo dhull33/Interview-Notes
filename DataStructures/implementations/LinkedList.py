@@ -1,4 +1,5 @@
-# Implementing a Linked List
+"""Implementing a Linked List"""
+
 class Element:
     def __init__(self, value):
         self.value = value
