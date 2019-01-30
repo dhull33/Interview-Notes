@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """This module implements a stack using linked lists"""
-from .LinkedList import LinkedList
+from .linked_list import LinkedList
 
 class Stack:
     """Implements the data structure Stack using a linked list"""

@@ -1,4 +1,4 @@
-"""Implementing a Linked List"""
+"""Implementing a Singly Linked List"""
 
 class Element:
     def __init__(self, value):
