@@ -1,6 +1,3 @@
-
-
-
 def slice_my_string():
     """
     Given a string S, of length N that is indexed from 0 to N-1, print its even
